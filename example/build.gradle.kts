@@ -1,5 +1,4 @@
 plugins {
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.android.application)
 }
 
@@ -9,13 +8,11 @@ kotlin {
 
 android {
     namespace = "com.example.filters"
-
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.filters"
-        minSdk = 23
-        targetSdk = 34
+        minSdk = 26
         versionCode = 1
         versionName = "1.0"
     }
@@ -27,6 +24,10 @@ android {
                     "proguard-rules.pro"
             )
         }
+    }
+    lint {
+        targetSdk = 36
+        baseline = file("lint-baseline.xml")
     }
 }
 

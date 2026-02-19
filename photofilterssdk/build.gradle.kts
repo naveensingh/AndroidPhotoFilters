@@ -1,5 +1,4 @@
 plugins {
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.android.library)
 }
 
@@ -9,11 +8,10 @@ kotlin {
 
 android {
     namespace = "com.zomato.photofilters"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
-        minSdk = 23
-        targetSdk = 34
+        minSdk = 26
     }
 
     buildTypes {
@@ -30,5 +28,12 @@ android {
         ndkBuild {
             path = file("src/main/jni/Android.mk")
         }
+    }
+    lint {
+        targetSdk = 36
+        baseline = file("lint-baseline.xml")
+    }
+    testOptions {
+        targetSdk = 36
     }
 }

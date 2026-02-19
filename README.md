@@ -4,7 +4,7 @@
 
 PhotoFiltersSDK aims to provide fast, powerful and flexible image processing instrument for creating awesome effects on any image media. 
 
-Library supports OS on API 23 and above.
+Library supports OS on API 26 and above.
 
 ![PhotoFilters gif](art/photofilters.gif)
 
