@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 9.0.1" type="baseline" client="gradle" dependencies="false" name="AGP (9.0.1)" variant="all" version="9.0.1">
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as a value for `size` in the scrolling direction."
+        errorLine1="        thumbListView?.setHasFixedSize(true)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/filters/MainActivity.kt"
+            line="42"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/thumb_background_color` with a theme that also paints a background (inferred theme is `@style/AppTheme`)"
+        errorLine1="    android:background=&quot;@color/thumb_background_color&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.zomato_red` appears to be unused"
+        errorLine1="    &lt;color name=&quot;zomato_red&quot;>#a40100&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.activity_horizontal_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;activity_horizontal_margin&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.activity_vertical_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;activity_vertical_margin&quot;>16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.recycler_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;recycler_size&quot;>100dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="6"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_world` appears to be unused"
+        errorLine1="    &lt;string name=&quot;hello_world&quot;>Hello world!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.action_settings` appears to be unused"
+        errorLine1="    &lt;string name=&quot;action_settings&quot;>Settings&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/photo.jpg` in densityless folder">
+        <location
+            file="src/main/res/drawable/photo.jpg"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX function `createBitmap` instead?"
+        errorLine1="        val outputBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/filters/GeneralUtils.kt"
+            line="12"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `Bitmap.scale` instead?"
+        errorLine1="            Bitmap.createScaledBitmap("
+        errorLine2="            ^">
+        <location
+            file="src/main/java/com/example/filters/MainActivity.kt"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `Bitmap.scale` instead?"
+        errorLine1="            val thumbImage = Bitmap.createScaledBitmap("
+        errorLine2="                             ^">
+        <location
+            file="src/main/java/com/example/filters/MainActivity.kt"
+            line="51"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `Bitmap.scale` instead?"
+        errorLine1="                Bitmap.createScaledBitmap("
+        errorLine2="                ^">
+        <location
+            file="src/main/java/com/example/filters/MainActivity.kt"
+            line="76"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="UseKtx"
+        message="Use the KTX extension function `Bitmap.scale` instead?"
+        errorLine1="            thumb.image = Bitmap.createScaledBitmap("
+        errorLine2="                          ^">
+        <location
+            file="src/main/java/com/example/filters/ThumbnailsManager.kt"
+            line="18"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="11"
+            column="6"/>
+    </issue>
+
+</issues>
